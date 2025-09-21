@@ -11,5 +11,5 @@ The focus of this project is on content and structure rather than heavy styling.
 - Highlights personal projects, skills, and contact information
 
 ## Inspirations
- - https://www.bugswriter.com
+ - https://bugswriter.com/ 
  - https://thebestmotherfucking.website
