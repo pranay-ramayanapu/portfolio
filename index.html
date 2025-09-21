@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Ramayanapu Venkata Pranai</title>
+    <style>
+.education-item {
+  margin-bottom: 16px;
+}
+.edu-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+}
+.edu-year {
+  font-size: 13px;
+  color: #888;
+}
+.edu-details {
+  font-size: 13px;
+  color: #aaa;
+  margin-top: 2px;
+}
+
+:root{
+  --max:900px;
+  --accent:#0b5cff;
+  --bg:#111;
+  --fg:#fafafa;
+  --card:#1e1e1e;
+  --border:#333;
+}
+body.light{
+  --bg:#fafafa;
+  --fg:#111;
+  --card:#fff;
+  --border:#eee;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans",sans-serif;
+  line-height:1.4;
+  color:var(--fg);
+  background:var(--bg);
+  display:flex;flex-direction:column;align-items:center;
+  padding-bottom:70px;
+  transition:background 0.3s,color 0.3s;
+}
+.wrap{width:95%;max-width:var(--max);}
+header{padding:48px 0 20px;position:relative;display:flex;flex-direction:column;gap:12px}
+h1{font-size:clamp(28px,6vw,48px);margin:0 0 8px}
+p.lead{margin:0;font-size:16px}
+section{background:var(--card);padding:18px;border-radius:8px;margin:14px 0;box-shadow:0 1px 0 rgba(0,0,0,0.04);border:1px solid var(--border);transition:background 0.3s,color 0.3s}
+.socials{display:flex;gap:18px;align-items:center}
+.socials a{font-size:18px;color:var(--fg);text-decoration:none;transition:color 0.2s}
+.socials a:hover{color:var(--accent)}
+.projects ul{list-style:none;padding:0;margin:0}
+.projects li{padding:12px 0;border-bottom:1px solid var(--border)}
+.projects a{color:var(--accent);text-decoration:none;font-weight:600}
+.meta{font-size:13px;color:#888;margin-top:6px}
+.tech{display:flex;flex-wrap:wrap;gap:8px}
+.chip{padding:6px 10px;border-radius:999px;border:1px solid var(--border);font-size:13px}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:8px}
+footer{position:fixed;left:0;right:0;bottom:0;height:56px;background:var(--card);border-top:1px solid var(--border);display:flex;align-items:center;justify-content:center;transition:background 0.3s}
+form{display:grid;gap:8px}
+input,textarea,button{font:inherit;padding:8px;border:1px solid var(--border);border-radius:6px;background:var(--card);color:var(--fg)}
+textarea{min-height:100px}
+button{background:var(--accent);color:white;border:none;cursor:pointer;padding:10px;border-radius:8px;transition:background 0.2s}
+button:hover{background:#0941c4}
+.top-buttons{position:absolute;top:10px;right:10px;display:flex;gap:10px}
+.top-buttons button,.top-buttons a{
+  font-size:16px;padding:6px 10px;cursor:pointer;
+  border:1px solid var(--border);border-radius:6px;background:var(--card);color:var(--fg);
+  text-decoration:none;display:inline-flex;align-items:center;justify-content:center;transition:background 0.2s, color 0.2s;
+}
+.top-buttons button:hover,.top-buttons a:hover{background:var(--accent);color:white}
+.top-buttons button span{margin-left:4px}
+.icon-btn{font-size:18px;padding:8px;border-radius:50%;display:flex;align-items:center;justify-content:center;transition:background 0.2s,color 0.2s}
+.icon-btn:hover{background:var(--accent);color:white}
+@media(min-width:700px){.wrap{width:85%}}
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="top-buttons">
+          <button id="themeToggle" class="icon-btn" title="toggle light/dark theme">🌓</button>
+          <a href="resume.pdf" download class="icon-btn" title="download resume">📄</a>
+        </div>
+        <h1 id="name">RAMAYANAPU VENKATA PRANAI</h1>
+        <div class="socials">
+          <a href="https://github.com/pranay-ramayanapu" target="_blank">Github</a>
+          <a href="https://x.com/murdockmatt301" target="_blank">X</a>
+          <a href="https://www.linkedin.com/in/ramayanapu-venkata-pranai-18a88a288/" target="_blank">LinkedIn</a>
+        </div>
+        <p class="lead" id="tag">Hello, friend. I’m a CS student living in a world of bloated web apps, learning to build cleaner, faster, ad-free software.</p>
+      </header>
+
+      <main>
+        <section class="projects">
+          <h2>Projects</h2>
+          <ul>
+            <li>
+              <div><a href="https://carpoolingconnect.vercel.app/" target="_blank">CarPooling</a></div>
+              <div class="meta">Scalable, real-time ride-sharing platform with secure authentication, smart routing, and event-driven notifications.</div>
+            </li>
+            <li>
+              <div><a href="https://github.com/pranay-ramayanapu/Fusion/tree/main/FusionIIIT/applications/gymkhana" target="_blank">Gymkhana Management System</a></div>
+              <div class="meta">Comprehensive management system for clubs and events, streamlining approvals, dashboards, and data access.</div>
+            </li>
+            <li>
+              <div><a href="https://github.com/pranay-ramayanapu/formula" target="_blank">Formula</a></div>
+              <div class="meta">An Adaptive Form Builder: No-code, logic-driven form builder that adapts dynamically to user input for faster, smarter form creation.</div>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Skills</h2>
+          <div class="tech" id="tech">
+            <span class="chip">Java</span>
+            <span class="chip">C</span>
+            <span class="chip">C++</span>
+            <span class="chip">Python</span>
+            <span class="chip">Django</span>
+            <span class="chip">SpringBoot</span>
+            <span class="chip">MySQL</span>
+            <span class="chip">PostgreSQL</span>
+            <span class="chip">MongoDB</span>
+            <span class="chip">HTML</span>
+            <span class="chip">React</span>
+            <span class="chip">Git</span>
+            <span class="chip">Github</span>
+            <span class="chip">Linux</span>
+          </div>
+        </section>
+
+        <section>
+          <h2>Intrests</h2>
+          <div class="tech" id="tech">
+            <span class="chip">System Design</span>
+            <span class="chip">DevOps</span>
+            <span class="chip">Cloud</span>
+            <span class="chip">AI & ML</span>
+            <span class="chip">System Security</span>
+          </div>
+        </section>
+
+        <section>
+          <h2>Education</h2>
+
+          <div class="education-item">
+            <div class="edu-header">
+              <span class="edu-name">IIIT Jabalpur</span>
+              <span class="edu-year">2022 - 2026</span>
+            </div>
+            <div class="edu-details">
+              Jabalpur, MadhyaPradesh, India • CPI: 7.6/10
+            </div>
+          </div>
+
+          <div class="education-item">
+            <div class="edu-header">
+              <span class="edu-name">Narayana Junior College</span>
+              <span class="edu-year">2020 - 2022</span>
+            </div>
+            <div class="edu-details">
+              kanuru, vijayawada, Andhra, India • Percentage: 87.9%
+            </div>
+          </div>
+
+          <div class="education-item">
+            <div class="edu-header">
+              <span class="edu-name">Viswabharathi High School</span>
+              <span class="edu-year">2017 - 2020</span>
+            </div>
+            <div class="edu-details">
+              Gudivada, Krishna, India • CPI: 10/10
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2>Suggest a project</h2>
+          <p class="meta">Have an idea? Tell me briefly — this will open your default email client when you hit "Send".</p>
+          <form action="mailto:pranayramayanapu@gmail.com" method="post" enctype="text/plain">
+            <input name="name" placeholder="Your name" required>
+            <input name="email" placeholder="Your email" required>
+            <textarea name="idea" placeholder="Describe the project idea (1-3 sentences)" required></textarea>
+            <button type="submit">Send</button>
+          </form>
+        </section>
+      </main>
+    </div>
+
+    <!-- <footer> -->
+    <!--   <div class="socials">  -->
+    <!--     <a href="https://github.com/pranay-ramayanapu" id="github" target="_blank">GitHub</a>  -->
+    <!--     <a href="https://x.com/murdockmatt301" id="twitter" target="_blank">Twitter</a>  -->
+    <!--     <a href="https://www.linkedin.com/in/ramayanapu-venkata-pranai-18a88a288/" id="linkedin" target="_blank">LinkedIn</a>  -->
+    <!--   </div>  -->
+    <!-- </footer> -->
+
+    <script>
+    const toggleBtn = document.getElementById('themeToggle');
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('light');
+    });
+    </script>
+  </body>
+</html>
